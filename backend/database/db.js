@@ -1,3 +1,3 @@
 module.exports = {
-  db: 'mongodb://localhost:27017/reactdb',
+  db: 'mongodb+srv://ajawad:carcar123@cluster0.lbiwzop.mongodb.net/test',
 }

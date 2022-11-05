@@ -2,13 +2,15 @@ let express = require('express');
 let mongoose = require('mongoose');
 let cors = require('cors');
 let bodyParser = require('body-parser');
+const createError = require('http-errors');
+
 
 // Express Route
-const studentRoute = require('../backend/routes/student.route')
+const bookRoute = require('./routes/book.route')
 
 // Connecting mongoDB Database
 mongoose
-  .connect('mongodb://127.0.0.1:27017/mydatabase')
+  .connect('mongodb+srv://ajawad:carcar123@cluster0.lbiwzop.mongodb.net/test')
   .then((x) => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -22,7 +24,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(cors());
-app.use('/students', studentRoute)
+app.use('/books', bookRoute)
 
 
 // PORT
