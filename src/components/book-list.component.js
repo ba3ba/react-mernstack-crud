@@ -37,9 +37,9 @@ export default class BookList extends Component {
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Roll No</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Description</th>
             <th>Action</th>
           </tr>
         </thead>
