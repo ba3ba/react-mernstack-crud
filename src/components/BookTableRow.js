@@ -15,7 +15,8 @@ export default class BookTableRow extends Component {
         'http://localhost:4000/books/delete-book/' + this.props.obj._id,
       )
       .then((res) => {
-        console.log('Book successfully deleted!')
+        console.log('Book successfully deleted!');
+        
       })
       .catch((error) => {
         console.log(error)
