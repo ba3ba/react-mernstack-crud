@@ -10,8 +10,10 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.17.1",
-    "mongoose": "^6.0.14"
+    "mongoose": "^6.0.14",
+    "twilio": "^3.83.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

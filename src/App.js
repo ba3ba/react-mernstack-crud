@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import CreateBook from './components/create-book.component'
 import EditBook from './components/edit-book.component'
 import BookList from './components/book-list.component'
+import CreateSubscriber from './components/add-subscriber'
 
 function App() {
   return (
@@ -38,6 +39,11 @@ function App() {
                     Book List
                   </Link>
                 </Nav>
+                <Nav>
+                  <Link to={'/create-subscriber'} className="nav-link">
+                    Subscribe
+                  </Link>
+                </Nav>
               </Nav>
             </Container>
           </Navbar>
@@ -52,6 +58,11 @@ function App() {
                     exact
                     path="/"
                     component={(props) => <CreateBook {...props} />}
+                  />
+                  <Route
+                    exact
+                    path="/create-subscriber"
+                    component={(props) => <CreateSubscriber {...props} />}
                   />
                   <Route
                     exact
