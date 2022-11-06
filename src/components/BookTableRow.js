@@ -16,6 +16,7 @@ export default class BookTableRow extends Component {
       )
       .then((res) => {
         console.log('Book successfully deleted!')
+        window.location.reload();
       })
       .catch((error) => {
         console.log(error)
