@@ -25,7 +25,7 @@ router.route('/create-book').post((req, res, next) => {
   subscriberSchema.find(req.body,(error,data) =>{
     data.forEach(function(element) {
       client.messages
-      .create({body: 'Hi there', from: '+13609975467', to: element.number})
+      .create({body: 'Hi there, a book has been uploaded', from: '+13609975467', to: element.number})
       .then(message => console.log(message.sid)).catch((err)=>{
         console.log(err)
       })
