@@ -23,7 +23,7 @@ function App() {
             <Container>
               <Navbar.Brand>
                 <Link to={'/create-book'} className="nav-link">
-                  React MERN Stack App
+                  BYOB
                 </Link>
               </Navbar.Brand>
 
