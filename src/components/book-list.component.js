@@ -14,7 +14,7 @@ export default class BookList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:4000/book/')
+    axios.get('http://localhost:4000/books/')
       .then(res => {
         this.setState({
           books: res.data
