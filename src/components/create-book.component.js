@@ -58,7 +58,7 @@ export default class CreateBook extends Component {
 
         <Form.Group controlId="Email">
           <Form.Label>Email</Form.Label>
-          <Form.Control type="email" value={this.state.email} onChange={this.onChangeBookEmail} />
+          <Form.Control type="text" value={this.state.email} onChange={this.onChangeBookEmail} />
         </Form.Group>
 
         <Form.Group controlId="Name">

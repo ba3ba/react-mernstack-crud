@@ -5,10 +5,11 @@ let bookSchema = new Schema({
   name: {
     type: String
   },
-  description: {
+  email: {
+  //author  
     type: String
   },
-  image: {
+  rollno: {
     type: String
   }
 }, {
