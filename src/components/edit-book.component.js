@@ -74,17 +74,17 @@ export default class EditBook extends Component {
     return (<div className="form-wrapper">
       <Form onSubmit={this.onSubmit}>
         <Form.Group controlId="Name">
-          <Form.Label>Name</Form.Label>
+          <Form.Label>Title</Form.Label>
           <Form.Control type="text" value={this.state.name} onChange={this.onChangeBookName} />
         </Form.Group>
 
         <Form.Group controlId="Email">
-          <Form.Label>Email</Form.Label>
+          <Form.Label>Author</Form.Label>
           <Form.Control type="email" value={this.state.email} onChange={this.onChangeBookEmail} />
         </Form.Group>
 
         <Form.Group controlId="Name">
-          <Form.Label>Roll No</Form.Label>
+          <Form.Label>Description</Form.Label>
           <Form.Control type="text" value={this.state.rollno} onChange={this.onChangeBookRollno} />
         </Form.Group>
 
